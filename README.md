@@ -15,4 +15,5 @@ PUT     /person/:id     Update an existing Person record with given id and new v
 
 ## Database
 
-- 
+- Make sure you have Docker and docker-compose installed
+- run `docker-compose -f ./db.dockercompose.yml up -d`

@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  mysql-gotest:
+    image: mysql:5.6
+    container_name: mysql-gotest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: gotest
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    restart: always
+    ports:
+      - "9306:3306"
